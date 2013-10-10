@@ -60,6 +60,7 @@
     -->
 	
 	<plugin name="InAppBrowser" value="CDVInAppBrowser" />
+	<plugin name="Notification" value="CDVNotification" />
 
 	
     <!-- Define app icon for each platform. -->
