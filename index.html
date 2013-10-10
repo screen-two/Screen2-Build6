@@ -446,8 +446,10 @@
 			}
 		};
 		
-		// instantiate our graph!			
-		var graph = new Rickshaw.Graph.Ajax( config );
+		// instantiate our graph!
+		if (typeof query_string.keywords !== 'undefined') { 
+			var graph = new Rickshaw.Graph.Ajax( config );
+		}
 		
 		$('#refresh').click(function(event) {
 			event.preventDefault();
@@ -610,13 +612,21 @@
     	<img src="./images/twitter-icon.png" alt="twitter-bird" />
         <h3>Sign in to your account</h3>
         <div class="twitter-login">
-        <div class="twitter-login-icon">
-            
-        </div>
-        <form class="twitter-login" action="http://digitalinc.ie/screen2/twitter_login.php" method="get">
-              <input type="submit" class="twitter-submit" value="Sign In" >
-        </form>
-        <script>
+            <div class="twitter-login-icon">
+                
+            </div>
+            <form class="twitter-login" action="http://digitalinc.ie/screen2/twitter_login.php" method="get">
+                  <input type="submit" class="twitter-submit" value="Sign In" >
+            </form>
+            <script>
+                document.addEventListener("deviceready", onDeviceReady, false);
+        
+                // device APIs are available
+                //
+                function onDeviceReady() {
+                    alert('loaded');
+                }
+				
 				$( "form.twitter-login" ).submit(function( event ) {
 					event.preventDefault();
 					
@@ -624,7 +634,7 @@
 					
 					 var myCallback = function() { 
 					 	alert(event.url); 
-						if (event.url.indexOf('digitalinc.ie') > 0) {
+						if (event.url.indexOf('digitalinc.ie') > 0 && event.url.indexOf('twitter_login.php') < 0) {
 							ref.close();
 						}
 					 }
