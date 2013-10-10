@@ -618,22 +618,12 @@
         <script>
 				$( "form.twitter-login" ).submit(function( event ) {
 					event.preventDefault();
-					
-					// Wait for Cordova to load
-					//
-					document.addEventListener("deviceready", onDeviceReady, false);
 				
-					// Cordova is ready
-					//
-					function onDeviceReady() {
-						 var ref = window.open('http://digitalinc.ie/screen2/twitter_login.php', '_blank', 'hidden=no');
-						 ref.addEventListener('loadstop', function(event) {
-							 alert('background window loaded'); 
-						 });
-						
-					}
-
-					
+					 var ref = window.open('http://digitalinc.ie/screen2/twitter_login.php', '_blank', 'hidden=no');
+					 ref.addEventListener('loadstop', function(event) {
+						 alert('background window loaded'); 
+					 });
+				
 					return false;
 				});
 			</script>
