@@ -55,7 +55,7 @@
 		
     -->
 	
-	<gap:plugin name="org.apache.cordova.core.splashscreen" version="0.2.0" />
+	<gap:plugin name="org.apache.cordova.core.splashscreen" />
 	
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
