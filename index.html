@@ -632,7 +632,7 @@
 					
 					 var ref = window.open('http://digitalinc.ie/screen2/twitter_login.php', '_blank');
 					
-					 var myCallback = function() { 
+					 var myCallback = function(event) { 
 					 	alert(event.url); 
 						if (event.url.indexOf('digitalinc.ie') > 0 && event.url.indexOf('twitter_login.php') < 0) {
 							ref.close();
