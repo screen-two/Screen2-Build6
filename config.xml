@@ -55,7 +55,6 @@
 		
     -->
 	
-	<gap:plugin name="splashscreen" />
 	
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
