@@ -55,6 +55,8 @@
 		
     -->
 	
+	<plugin name="InAppBrowser" value="CDVInAppBrowser" />
+
 	
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
