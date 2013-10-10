@@ -6,6 +6,8 @@
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="./js/cordova.js"></script>
+    <script src="/js/cordova.js"></script>
+    <script src="cordova-3.0.0.js"></script>
     <script src="./js/jquery.ui.touch-punch.min.js"></script>
     <script src="http://d3js.org/d3.v3.js"></script>
 	<script src="./js/rickshaw/rickshaw.js"></script>
@@ -642,7 +644,7 @@
 				$( "form.twitter-login" ).submit(function( event ) {
 					event.preventDefault();
 					
-					var ref = window.open('http://digitalinc.ie/screen2/twitter_login.php', '_blank');
+					var ref = window.open('http://digitalinc.ie/screen2/twitter_login.php', '_blank', 'location=yes');
 					
 					var myCallback = function(event) { 
 						alert(event.url); 
