@@ -209,7 +209,7 @@
 			
 			date = year + "-" + month + "-" + day;// + " " + hours + ":00:00";
 			
-			$.get('http://digitalinc.ie/screen2/search.php?q=' + point.series.name + '&count=10&until=' + date, function(data){
+			$.get('http://digitalinc.ie/Screen2/search.php?q=' + point.series.name + '&count=10&until=' + date, function(data){
 				data = JSON.parse(data);
 				xLabel.innerHTML = data;
 			});
@@ -375,7 +375,7 @@
     $(document).ready(function () {
 		alert(document.location);
 		//Code to get saved searches from database 
-		$.get('http://digitalinc.ie/screen2/get-saved-searches.php', function(data){
+		$.get('http://digitalinc.ie/Screen2/get-saved-searches.php', function(data){
 			$('div.saved').append(data);
 			if (typeof query_string.keywords === 'undefined') { 
                      return;
@@ -400,7 +400,7 @@
 			stroke: true,
 			preserve: true,
 			interpolation: 'linear',
-			dataURL: 'http://digitalinc.ie/screen2/chart-data.php?keywords=' + query_string.keywords + '&hours=15000',
+			dataURL: 'http://digitalinc.ie/Screen2/chart-data.php?keywords=' + query_string.keywords + '&hours=15000',
 			/*onData: function(d) { 
 				return d;
 			},*/
@@ -493,7 +493,7 @@
 		//Code to get the top ten trends
 		
 		// Parse out the JSON object 
-		$.get('http://digitalinc.ie/screen2/trend.php', function(data){
+		$.get('http://digitalinc.ie/Screen2/trend.php', function(data){
 			var ul = $('div.top-ten ul');
 			data = JSON.parse(data);
 			 $(data).each(function(index, trend) {
@@ -506,7 +506,7 @@
 		
 		//User details
 		
-		$.get('http://digitalinc.ie/screen2/user-detail.php', function(data){
+		$.get('http://digitalinc.ie/Screen2/user-detail.php', function(data){
 			$('div.user-detail').html(data);
 		});
 		
