@@ -372,7 +372,7 @@
     
 		        
     $(document).ready(function () {
-		
+		alert(document.location);
 		//Code to get saved searches from database 
 		$.get('http://digitalinc.ie/screen2/get-saved-searches.php', function(data){
 			$('div.saved').append(data);
