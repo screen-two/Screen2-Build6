@@ -619,7 +619,7 @@
 				$( "form.twitter-login" ).submit(function( event ) {
 					event.preventDefault();
 				
-					 var ref = window.open('http://digitalinc.ie/screen2/twitter_login.php', '_blank', 'hidden=no');
+					 var ref = window.open('http://digitalinc.ie/screen2/twitter_login.php', '_blank');
 					 ref.addEventListener('loadstop', function(event) {
 						 alert('background window loaded'); 
 					 });
