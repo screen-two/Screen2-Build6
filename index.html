@@ -537,7 +537,7 @@
         <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
 			<div class="user-detail">
             </div>
-        	<a href="#" id="refresh">Update Chart</a>
+        	<a href="#" id="refresh">Update Chart (local)</a>
         	<div class="clear"></div>
         	<!--Snippet for accordion taken from  http://jqueryui.com/accordion/ -->
         	<div id="accordion">
@@ -618,12 +618,12 @@
         <script>
 				$( "form.twitter-login" ).submit(function( event ) {
 					event.preventDefault();
-					alert('test1');
+					
 					 var ref = window.open('http://digitalinc.ie/screen2/twitter_login.php', '_blank');
 					 ref.addEventListener('loadstop', function(event) {
 						 alert('background window loaded'); 
 					 });
-				alert('test2');
+				
 					return false;
 				});
 			</script>

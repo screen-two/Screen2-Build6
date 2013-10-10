@@ -82,6 +82,8 @@
 	<access origin="http://digitalinc.ie" subdomains="true"/>
 	<access origin="http://www.twitter.com" subdomains="true"/>
 	<access origin="http://twitter.com" subdomains="true"/>
+	<access origin="http://www.twimg.com" subdomains="true"/>
+	<access origin="http://twimg.com" subdomains="true"/>
 	<access origin="http://code.jquery.com" subdomains="true"/>
 	<access origin="http://d3js.org" subdomains="true"/>
 	<access origin="http://fonts.googleapis.com" subdomains="true"/>
