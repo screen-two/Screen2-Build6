@@ -624,8 +624,17 @@
                 // device APIs are available
                 //
                 function onDeviceReady() {
-                    alert('loaded');
-                }
+					// do Something!
+					// example: display a Cordova Alert
+					// see docs.phonegap.com for full details
+					navigator.notification.alert(
+						'Cordova is ready!',       // message
+						function() {//do something},  // callback
+						'Congratulations',            // title
+						'Done'                      // buttonName
+					);
+				}
+
 				
 				$( "form.twitter-login" ).submit(function( event ) {
 					event.preventDefault();
@@ -637,7 +646,7 @@
 						if (event.url.indexOf('digitalinc.ie') > 0 && event.url.indexOf('twitter_login.php') < 0) {
 							ref.close();
 						}
-					}
+					};
 					ref.addEventListener('loadstart', myCallback);
 					ref.addEventListener('onload', myCallback);
 				
