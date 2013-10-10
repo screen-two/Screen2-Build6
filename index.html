@@ -373,7 +373,6 @@
     
 		        
     $(document).ready(function () {
-		alert(document.location);
 		//Code to get saved searches from database 
 		$.get('http://digitalinc.ie/Screen2/get-saved-searches.php', function(data){
 			$('div.saved').append(data);
@@ -619,24 +618,8 @@
                   <input type="submit" class="twitter-submit" value="Sign In" >
             </form>
             <script>
-                document.addEventListener("deviceready", onDeviceReady, false);
         
-                // device APIs are available
-                //
-                function onDeviceReady() {
-					// do Something!
-					// example: display a Cordova Alert
-					// see docs.phonegap.com for full details
-					navigator.notification.alert(
-						'Cordova is ready!',       // message
-						function() {
-							//do something
-							alert('loaded');
-						},  // callback
-						'Congratulations',            // title
-						'Done'                      // buttonName
-					);
-				}
+               
 
 				
 				$( "form.twitter-login" ).submit(function( event ) {
