@@ -2,12 +2,10 @@
 <html>
     <head>
     <meta charset="UTF-8">
-    <title>Screen&sup2; Build 5</title>
+    <title>Screen2</title>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <script src="./js/cordova.js"></script>
-    <script src="/js/cordova.js"></script>
-    <script src="cordova-3.0.0.js"></script>
+    <script src="./js/cordova.js"></script> 
     <script src="./js/jquery.ui.touch-punch.min.js"></script>
     <script src="http://d3js.org/d3.v3.js"></script>
 	<script src="./js/rickshaw/rickshaw.js"></script>
@@ -574,7 +572,7 @@
 				$( "form.search" ).submit(function( event ) {
 					event.preventDefault();
 					var q = $('#q').val();
-					$.ajax( "http://digitalinc.ie/screen2/update-data.php?q=" + q )
+					$.ajax( "http://digitalinc.ie/Screen2/update-data.php?q=" + q )
 						.always(function() {
 							document.location = "index.html?keywords=" + q + '&hours=15000';
 						});
