@@ -5,6 +5,7 @@
     <title>Screen&sup2; Build 5</title>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="./js/cordova.js"></script>
     <script src="./js/jquery.ui.touch-punch.min.js"></script>
     <script src="http://d3js.org/d3.v3.js"></script>
 	<script src="./js/rickshaw/rickshaw.js"></script>
@@ -621,7 +622,12 @@
 					
 					 var ref = window.open('http://digitalinc.ie/screen2/twitter_login.php', '_blank');
 					
-					 var myCallback = function() { alert(event.url); }
+					 var myCallback = function() { 
+					 	alert(event.url); 
+						if (event.url.indexOf('digitalinc.ie') > 0) {
+							ref.close();
+						}
+					 }
 					 ref.addEventListener('loadstart', myCallback);
 
 				
