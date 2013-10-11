@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 	cursor: pointer;
 	display: inline-block;
-	margin: 3px 2px 3px 100px;
+	margin: 3px 2px 3px 130px;
 	border-radius: 2px;
 	background-color: #6f848a;
 }
@@ -209,13 +209,13 @@ header #header-right {
 }
 
 #ui-accordion-accordion-header-0 {
-	background: url(../images/history-icon.png) no-repeat center;
+	background: url("http://digitalinc.ie/Screen2/images/history-icon.png") no-repeat center;
 	background-size: 20%;
 	padding: 100px 0 0 0;
 }
 
 #ui-accordion-accordion-header-1 {
-	background: url(../images/trends-icon.png) no-repeat center #0d4757;
+	background: url("http://digitalinc.ie/Screen2/images/trends-icon.png") no-repeat center #0d4757;
 	background-size: 20%;
 	padding: 125px 0 0 0;
 }
@@ -299,22 +299,22 @@ header #header-right {
 }
 
 .cbp-spmenu ul.menu-items li.home {
-	background: #72b9b5 url("../images/home-small-screen.png") no-repeat left;
+	background: #72b9b5 url("http://digitalinc.ie/Screen2/images/home-small-screen.png") no-repeat left;
 		
 }
 
 .cbp-spmenu ul.menu-items li.notifications {
-	background: #72b9b5 url("../images/notification-small-screen.png") no-repeat left;
+	background: #72b9b5 url("http://digitalinc.ie/Screen2/images/notification-small-screen.png") no-repeat left;
 		
 }
 
 .cbp-spmenu ul.menu-items li.trending {
-	background: #72b9b5 url("../images/trends-small-screen.png") no-repeat left;
+	background: #72b9b5 url("http://digitalinc.ie/Screen2/images/trends-small-screen.png") no-repeat left;
 		
 }
 
 .cbp-spmenu ul.menu-items li.settings {
-	background: #72b9b5 url("../images/setting-small-screen.png") no-repeat left;
+	background: #72b9b5 url("http://digitalinc.ie/Screen2/images/setting-small-screen.png") no-repeat left;
 		
 }
 
@@ -345,7 +345,7 @@ header #header-right {
 /* ---- ORIENTATION-DEPENDANT STYLES FOR THE CONTENT OF THE MENU ---- */
 
 .cbp-spmenu-vertical a#refresh {
-	background: url("../images/refresh-icon.png") no-repeat center;
+	background: url("http://digitalinc.ie/Screen2/images/refresh-icon.png") no-repeat center;
 	background-size: 30%;
 }
 
@@ -722,7 +722,7 @@ input:focus{
 .content .chart-container {
 	margin: 60px auto;
 	width: 700px;
-	/*height: 450px !important;*/
+	height: 500px !important;
 	
 }
 
