@@ -21,54 +21,55 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* TREND BOXES */
+.trends {
+	margin: 0 auto;
+}
+
 .Trend-01  {
 	border: none;
-padding: 0.6em 1.2em;
-color: #fff;
-font-family: 'Lato', Calibri, Arial, sans-serif;
-font-size: 1em;
-letter-spacing: 1px;
-text-transform: uppercase;
-cursor: pointer;
-display: inline-block;
-margin: 3px 2px;
-border-radius: 2px;
-background-color: #6f848a;
-margin-left:50px
+	padding: 0.6em 1.2em;
+	color: #fff;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-size: 1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: inline-block;
+	margin: 3px 2px 3px 135px;
+	border-radius: 2px;
+	background-color: #6f848a;
 }
 
 .Trend-02 {
 	border: none;
-padding: 0.6em 1.2em;
-color: #fff;
-font-family: 'Lato', Calibri, Arial, sans-serif;
-font-size: 1em;
-letter-spacing: 1px;
-text-transform: uppercase;
-cursor: pointer;
-display: inline-block;
-margin: 3px 2px;
-border-radius: 2px;
-background-color: #77a9b7;
-
+	padding: 0.6em 1.2em;
+	color: #fff;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-size: 1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: inline-block;
+	margin: 3px 2px;
+	border-radius: 2px;
+	background-color: #77a9b7;
 }
 
 
 .Trend-03 {
 	border: none;
-padding: 0.6em 1.2em;
-color: #fff;
-font-family: 'Lato', Calibri, Arial, sans-serif;
-font-size: 1em;
-letter-spacing: 1px;
-text-transform: uppercase;
-cursor: pointer;
-display: inline-block;
-margin: 3px 2px;
-border-radius: 2px;
-background-color: #1e9abd;
+	padding: 0.6em 1.2em;
+	color: #fff;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-size: 1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: inline-block;
+	margin: 3px 2px;
+	border-radius: 2px;
+	background-color: #1e9abd;
 }
-
 /* /////////////END TRENDS /////////// */
 
 /*ul.
@@ -721,6 +722,7 @@ input:focus{
 .content .chart-container {
 	margin: 60px auto;
 	width: 700px;
+	height: 450px !important;
 	
 }
 
@@ -881,8 +883,16 @@ body.loading .modal {
     opacity: 1;
     transform: rotateY(0deg);
 }
+
 @media screen and (max-width: 32em) {
 body {
     font-size: 75%;
+}
+
+@media screen (min-width: 760px) {
+	
+	#chart .rickshaw_graph {
+		height: 100% !important;
+	}
 }
 
