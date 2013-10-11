@@ -539,7 +539,7 @@
         <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
 			<div class="user-detail">
             </div>
-        	<a href="#" id="refresh">Hit it!</a>
+        	<a href="#" id="refresh">Update Chart</a>
         	<div class="clear"></div>
         	<!--Snippet for accordion taken from  http://jqueryui.com/accordion/ -->
         	<div id="accordion">
@@ -650,12 +650,31 @@
     <div class="tabs">
     <div class="tab-01"></div>
     	<div class="trends">
-        	<div class="Trend-01">Tab 1</div>
-            <div class="Trend-02">Tab2</div>
-            <div class="Trend-03">Tab 3</div>
+        	<div class="Trend-01">#xfactor</div>
+            <div class="Trend-02">#allireland</div>
+            <div class="Trend-03">#lovehate</div>
         </div>
      <div class="tab-03"></div>
     	
+    </div>
+    
+    <script>
+		$('div.tabs').click(function(event) {
+			event.preventDefault();
+			var target = $( event.target );
+			var keyword = target.text();
+		
+			if(keyword != ''){
+				if(keyword.substr(0,1) == '#'){
+					keyword = keyword.substr('1');
+				}
+				
+				document.location = "index.php?keywords=" + keyword + '&hours=15000';
+			}
+			return false;
+		});
+	</script>
+    
     </div>
 </body>
 </html>
