@@ -264,15 +264,7 @@
 	
 			this.graph.onUpdate( function() { this.update() }.bind(this) );
 	
-			/*this.graph.element.addEventListener(
-				'mouseout',
-				function(e) {
-					if (e.relatedTarget && !(e.relatedTarget.compareDocumentPosition(this.graph.element) & Node.DOCUMENT_POSITION_CONTAINS)) {
-						this.hide();
-					}
-				}.bind(this),
-				false
-			);*/
+			
 		}
 	});
 	
@@ -393,8 +385,8 @@
 		
 		var config = {
 			element: document.getElementById("chart"),
-			width: 400,
-			height: 700,
+			width: 600,
+			height: 400,
 			renderer: 'digitalinc',
 			stroke: true,
 			preserve: true,
