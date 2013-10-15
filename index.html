@@ -8,13 +8,15 @@
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="./js/cordova.js"></script> 
     <script src="./js/jquery.ui.touch-punch.min.js"></script>
-     <script src="./js/jquery.checknet-1.6.min.js"></script>
+     <script src="./js/jquery.avgrund.min.js"></script>
     <script src="http://d3js.org/d3.v3.js"></script>
 	<script src="./js/rickshaw/rickshaw.js"></script>
     <script type="text/javascript" src="js/twitterfeed.js"></script>
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link href="css/rickshaw.css" rel="stylesheet" type="text/css" />
+    <link href="css/avgrund.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/avgrund.css">
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
     
     <script>
@@ -366,12 +368,25 @@
 	//Check to see if there is an internet connection
 		
 	//Solution from http://stackoverflow.com/questions/17377579/how-to-check-internet-connection-in-phonegap-periodically
-	setInterval(function () {
+	var status;
+	
+	function checkOnline(){
 		if(navigator.onLine == false) {
-			alert("Offline " + navigator.onLine);
+			clearInterval(status);
+			$('.content').avgrund({
+				height: 200,
+				holderClass: 'custom',
+				showClose: true,
+				showCloseText: 'close',
+				onBlurContainer: '.container',
+				openOnEvent: false,
+				template: '<p>No Internet connection detected, please connect to access Screen2 features</p>',
+				onUnload: function (elem) { 
+					status = setInterval(checkOnline, 1000); 
+				}
+			});
 		}
-			
-	}, 1000);
+	}
     
 		        
     $(document).ready(function () {
@@ -568,6 +583,7 @@
 	
     
     <div class="content">
+    
         <div class="search">
             <form class="search" action="" method="get">
                 <input id="q" results=5 type="search" name="q" placeholder="Search Keyword or Topic"/>
