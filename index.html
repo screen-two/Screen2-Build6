@@ -370,7 +370,7 @@
 		//Check to see if there is an internet connection
         setInterval(function () {
 			if(navigator.onLine != 'online') {
-				alert("Offline");
+				alert("Offline" + navigator.onLine);
 			}
 				
 		}, 1000);
