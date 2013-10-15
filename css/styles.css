@@ -20,6 +20,26 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 
+
+/* ---- //// BEGIN CHECKNET STYLES ////---- */
+
+#netWarn {
+	display: none; 
+	margin: 0; 
+	padding: 0.5em 1em; 
+	border: 0; 
+	border-bottom: thin solid #FFDEDE; 
+	text-align: center; 
+	color: #666; 
+	text-shadow: 1px 1px 1px #FFEFEF;
+	background-color: #FFEFEF;
+	
+	background-image: -webkit-linear-gradient(top, #FFEFEF, #FFDFDF); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	
+}
+
+/* ---- //// END CHECKNET STYLES ////---- */
+
 /* TREND BOXES */
 .trends {
 	margin: 0 auto;
