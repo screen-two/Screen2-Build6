@@ -368,9 +368,12 @@
 		        
     $(document).ready(function () {
 		//Check to see if there is an internet connection
-        $.fn.checknet();
-		checknet.config.checkInterval = 1000;
-		checknet.config.warnMsg = "No Internet connection detected, please connect to access Screen2 features.";
+        setInterval(function () {
+			if(navigator.onLine != 'online') {
+				alert("Offline");
+			}
+				
+		}, 1000);
 		
 		//Code to get saved searches from database 
 		$.get('http://digitalinc.ie/Screen2/get-saved-searches.php', function(data){
