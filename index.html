@@ -369,8 +369,8 @@
     $(document).ready(function () {
 		//Check to see if there is an internet connection
         setInterval(function () {
-			if(navigator.onLine != 'online') {
-				alert("Offline" + navigator.onLine);
+			if(navigator.onLine != 'true') {
+				alert("Offline " + navigator.onLine);
 			}
 				
 		}, 1000);
