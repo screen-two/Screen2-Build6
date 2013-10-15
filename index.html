@@ -363,19 +363,19 @@
 		}
 	} );
 	
-
+	//Check to see if there is an internet connection
+		
+	//Solution from http://stackoverflow.com/questions/17377579/how-to-check-internet-connection-in-phonegap-periodically
+	setInterval(function () {
+		if(navigator.onLine == false) {
+			alert("Offline " + navigator.onLine);
+		}
+			
+	}, 1000);
     
 		        
     $(document).ready(function () {
-		//Check to see if there is an internet connection
 		
-		//Solution from http://stackoverflow.com/questions/17377579/how-to-check-internet-connection-in-phonegap-periodically
-        setInterval(function () {
-			if(navigator.onLine == false) {
-				alert("Offline " + navigator.onLine);
-			}
-				
-		}, 1000);
 		
 		//Code to get saved searches from database 
 		$.get('http://digitalinc.ie/Screen2/get-saved-searches.php', function(data){
