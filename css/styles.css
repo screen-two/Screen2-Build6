@@ -267,7 +267,8 @@ header #header-right {
 }
 
 .ui-helper-reset ul li {
-	border-bottom: 1px solid;
+	border-bottom: 1px solid #47737F;
+	box-shadow: 0 0 3px #B0E1EF;
     color: #FFFFFF;
     font-size: 1em;
     list-style: none outside none;
@@ -275,6 +276,9 @@ header #header-right {
     padding: 10px;
 }
 
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	margin: 0 15px !important;
+}
 
 
 /* ---- //// END SIDEBAR STYLES ////---- */
@@ -633,7 +637,8 @@ input:focus{
 	}
 	
 	.saved ul li {
-		border-bottom: 1px solid;
+		border-bottom: 1px solid #47737F;
+		box-shadow: 0 0 3px #B0E1EF;
 		color: #FFFFFF;
 		font-family: 'Roboto',Arial,sans-serif;
 		font-size: 1em;
@@ -873,23 +878,44 @@ body.loading .modal {
     margin: 0;
     padding: 15px 40px 30px;
 }
-.md-content > div p {
+.md-content p {
     margin: 0;
     padding: 10px 0;
 }
-.md-content > div ul {
+.md-content ul {
     margin: 0;
     padding: 0 0 30px 20px;
 }
-.md-content > div ul li {
-    padding: 5px 0;
-	list-style: none;
+.md-content  ul li {
+    padding: 10px 0;
+	list-style: none !important;
 }
 .md-content button {
     display: block;
     font-size: 0.8em;
     margin: 0 auto;
 }
+
+#md-button-close {
+	margin: 0 auto !important;
+}
+
+button.md-close {
+	background-color: #6F848A;
+    border: medium none;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Lato',Calibri,Arial,sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+    margin: 0 0 0 38.09% !important;
+    padding: 0.6em 1.2em;
+    text-transform: uppercase;
+}
+
+
 .md-effect-8.md-modal {
     perspective: 1300px;
 }
