@@ -217,7 +217,7 @@ header #header-right {
 #ui-accordion-accordion-header-0 {
 	background: url("../images/history-icon.png") no-repeat center;
 	background-size: 20%;
-	padding: 100px 0 0 0;
+	padding: 100px 0 20px 0;
 }
 
 #ui-accordion-accordion-header-1 {
@@ -267,10 +267,12 @@ header #header-right {
 }
 
 .ui-helper-reset ul li {
-	font-size: .8em;
-	margin: 0;
-	padding: 0;
-	list-style: none;
+	border-bottom: 1px solid;
+    color: #FFFFFF;
+    font-size: 1em;
+    list-style: none outside none;
+    margin: 0;
+    padding: 10px;
 }
 
 
@@ -639,6 +641,7 @@ input:focus{
 		list-style: none outside none;
 		text-transform: lowercase;
 		width: 100%;
+		padding: 10px;
 		
 	}
 	
