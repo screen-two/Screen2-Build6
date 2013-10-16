@@ -201,6 +201,9 @@ header #header-right {
 
 /* ---- //// BEGIN SIDEBAR STYLES //// ---- */
 
+.ui-accordion .ui-accordion-content {
+	padding: 0 !important;
+}
 
 .ui-accordion .ui-accordion-icons {
 	color: #fff;
@@ -628,10 +631,14 @@ input:focus{
 	}
 	
 	.saved ul li {
-		font-size: .7em;
-		list-style: none;
-		font-family: 'Roboto', Arial, sans-serif;
+		border-bottom: 1px solid;
+		color: #FFFFFF;
+		font-family: 'Roboto',Arial,sans-serif;
+		font-size: 1em;
 		line-height: 2;
+		list-style: none outside none;
+		text-transform: lowercase;
+		width: 100%;
 		
 	}
 	
