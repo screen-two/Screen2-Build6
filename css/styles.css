@@ -92,23 +92,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* /////////////END TRENDS /////////// */
 
-/*ul.
-{
-list-style-type: none;
-padding: 0px;
-margin: 0px;
-}
-
-.li
-{
-background-image: url(../images/list.png);
-background-repeat: no-repeat;
-line-height 
-height: 46px;
-padding-left: 40px;
- 
-}
-*/
 
 
 .logo {
@@ -155,7 +138,7 @@ header #header-left .menu-icon {
 }
 
 header #header-left .menu-icon button {
-	background: url("http://digitalinc.ie/screen2/images/menu-icon.png") no-repeat center;
+	background: url("../images/menu-icon.png") no-repeat center;
 	border: none;
 	width: 100%;
 	height: 100%;
@@ -229,13 +212,13 @@ header #header-right {
 }
 
 #ui-accordion-accordion-header-0 {
-	background: url("http://digitalinc.ie/Screen2/images/history-icon.png") no-repeat center;
+	background: url("../images/history-icon.png") no-repeat center;
 	background-size: 20%;
 	padding: 100px 0 0 0;
 }
 
 #ui-accordion-accordion-header-1 {
-	background: url("http://digitalinc.ie/Screen2/images/trends-icon.png") no-repeat center #0d4757;
+	background: url("../images/trends-icon.png") no-repeat center #0d4757;
 	background-size: 20%;
 	padding: 125px 0 0 0;
 }
@@ -319,22 +302,22 @@ header #header-right {
 }
 
 .cbp-spmenu ul.menu-items li.home {
-	background: #72b9b5 url("http://digitalinc.ie/Screen2/images/home-small-screen.png") no-repeat left;
+	background: #72b9b5 url("../images/home-small-screen.png") no-repeat left;
 		
 }
 
 .cbp-spmenu ul.menu-items li.notifications {
-	background: #72b9b5 url("http://digitalinc.ie/Screen2/images/notification-small-screen.png") no-repeat left;
+	background: #72b9b5 url("../images/notification-small-screen.png") no-repeat left;
 		
 }
 
 .cbp-spmenu ul.menu-items li.trending {
-	background: #72b9b5 url("http://digitalinc.ie/Screen2/images/trends-small-screen.png") no-repeat left;
+	background: #72b9b5 url("../images/trends-small-screen.png") no-repeat left;
 		
 }
 
 .cbp-spmenu ul.menu-items li.settings {
-	background: #72b9b5 url("http://digitalinc.ie/Screen2/images/setting-small-screen.png") no-repeat left;
+	background: #72b9b5 url("../images/setting-small-screen.png") no-repeat left;
 		
 }
 
@@ -365,7 +348,7 @@ header #header-right {
 /* ---- ORIENTATION-DEPENDANT STYLES FOR THE CONTENT OF THE MENU ---- */
 
 .cbp-spmenu-vertical a#refresh {
-	background: url("http://digitalinc.ie/Screen2/images/refresh-icon.png") no-repeat center;
+	background: url("../images/refresh-icon.png") no-repeat center;
 	background-size: 30%;
 }
 
@@ -584,7 +567,7 @@ input[type=button], input[type=button]:hover {
 }
 
 .search input[type=button], #update {
-	background:  url("http://digitalinc.ie/Screen2/images/search.png") no-repeat fixed center #fff;
+	background:  url("../images/search.png") no-repeat fixed center #fff;
 }
 
 
@@ -778,7 +761,7 @@ input:focus{
     height:     100%;
     width:      100%;
     background: rgba( 255, 255, 255, .8 ) 
-                url('./images/loading4.gif')  
+                url('../images/loading4.gif')  
                 50% 50% 
                 no-repeat;
 }
