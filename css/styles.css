@@ -898,6 +898,7 @@ body.loading .modal {
 
 #md-button-close {
 	margin: 0 auto !important;
+	text-align: center;
 }
 
 button.md-close {
