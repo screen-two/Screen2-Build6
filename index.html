@@ -19,6 +19,19 @@
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
     
     <script>
+	
+	//jQuery Loading Spinner http://stackoverflow.com/questions/1964839/jquery-please-wait-loading-animation
+	
+	$("body").on({
+		ajaxStart: function() { 
+			$(this).addClass("loading"); 
+		},
+		ajaxStop: function() { 
+			$(this).removeClass("loading"); 
+		}    
+	});
+	
+	
 	//JSON Parser 
 	//developerdrive.com
     function QueryStringToJSON() {            

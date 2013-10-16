@@ -116,6 +116,13 @@ body.avgrund-active {
 }
 
 
+.custom {
+	color: #555;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
 .custom p {
     font-size: 14px;
     font-weight: 300;
@@ -123,3 +130,6 @@ body.avgrund-active {
     padding: 10px 20px;
     text-align: justify;
 }
+
+	
+	
